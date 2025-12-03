@@ -10,12 +10,10 @@
 #include "reader.h"
 
 
-int main() {
+void readAndWriteTest(){
     RFIDReader reader("COM7", 115200);
-    
     reader.setFullPower();
 
-    
     while (reader.getUID() == "")
     {
         std::string uid = reader.readUID();
@@ -42,9 +40,12 @@ int main() {
         }
         
     }
-    
-    
+}
 
 
+
+
+int main() {
+    
     return 0;
 }
