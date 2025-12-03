@@ -1,7 +1,6 @@
 #ifndef BYTEMANIP_H
 #define BYTEMANIP_H
 
-#include <windows.h>
 #include <iostream>
 #include <stdio.h>
 #include <algorithm>
@@ -42,6 +41,16 @@ std::string reverseBytes(const std::string s) {
     }
 
     return result;
+}
+
+std::string asciiToHexString(const std::string& input) {
+    std::ostringstream oss;
+    oss << std::hex << std::uppercase << std::setfill('0');
+
+    for (unsigned char c : input) {
+        oss << std::setw(2) << static_cast<int>(c);
+    }
+    return oss.str();
 }
 
 #endif
