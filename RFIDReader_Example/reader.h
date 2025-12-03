@@ -130,6 +130,11 @@ public:
         return reverseBytesPerBlock(data);
     }
 
+    std::string readAsciiDataFromCardAddress(){
+        std::string hexData = readDataFromCardAddress();
+        return hexStringToAscii(hexData);
+    }
+
     void writeHexDataToCardAddress(std::string data) {
         int remainder = data.size() % 8;
         if (remainder != 0) {

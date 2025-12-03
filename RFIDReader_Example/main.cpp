@@ -26,7 +26,7 @@ int main() {
             try
             {
                 reader.writeAsciiDataToCardAddress("0123ABCDE");
-                std::string cardData = reader.readDataFromCardAddress();
+                std::string cardData = reader.readAsciiDataFromCardAddress();
                 if (cardData == "") {
                     throw std::runtime_error("Error reading data from card.");
                 }

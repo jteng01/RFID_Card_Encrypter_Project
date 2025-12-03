@@ -15,7 +15,6 @@ std::string decToHexString(int decimalValue) {
 }
 
 std::string reverseBytesPerBlock(const std::string s) {
-
     std::string result;
     result.reserve(s.length());
 
@@ -31,8 +30,7 @@ std::string reverseBytesPerBlock(const std::string s) {
     return result;
 }
 
-std::string reverseBytes(const std::string s) {
-
+std::string reverseBytes(const std::string s) { 
     std::string result;
     result.reserve(s.length());
 
@@ -52,5 +50,18 @@ std::string asciiToHexString(const std::string& input) {
     }
     return oss.str();
 }
+
+std::string hexStringToAscii(const std::string& hex) {
+    std::string output;
+
+    for (size_t i = 0; i < hex.length(); i += 2) {
+        std::string byteStr = hex.substr(i, 2);
+        char byte = static_cast<char>(std::stoi(byteStr, nullptr, 16));
+        output.push_back(byte);
+    }
+
+    return output;
+}
+
 
 #endif
