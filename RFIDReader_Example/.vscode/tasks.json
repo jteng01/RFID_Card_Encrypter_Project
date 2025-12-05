@@ -5,11 +5,13 @@
             "label": "C/C++: g++.exe build active file",
             "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
             "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                    "-fdiagnostics-color=always",
+                    "-g",
+                    "${fileDirname}\\main.cpp",
+                    "-o",
+                    "${fileDirname}\\main.exe",
+                    "-lcrypto",
+                    "-lssl"
             ],
             "options": {
                 "cwd": "${fileDirname}"
