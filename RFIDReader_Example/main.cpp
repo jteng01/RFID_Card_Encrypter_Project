@@ -25,10 +25,12 @@ void readAndWriteTest(){
             try
             {
                 reader.writeAsciiDataToCardAddress("0123ABCDE");
+                std::string rawData = reader.readDataFromCardAddress();
                 std::string cardData = reader.readAsciiDataFromCardAddress();
                 if (cardData == "") {
                     throw std::runtime_error("Error reading data from card.");
                 }
+                std::cout << rawData << std::endl;
                 std::cout << cardData << std::endl;
             }
             catch(const std::exception& e)
@@ -145,7 +147,6 @@ void decryptCardTest() {
                     throw std::runtime_error("Error reading data from card.");
                 }
 
-                encryptor.setIv((std::string)"ABCDEF0123456789");
                 std::string decryptedData = encryptor.decrypt(encryptedData);
 
                 std::cout << "Decrypted Card Data: " << decryptedData << std::endl;
@@ -159,7 +160,6 @@ void decryptCardTest() {
         }
     }
 }
-
 
 
 int main() {
