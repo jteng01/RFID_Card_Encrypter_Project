@@ -1,11 +1,6 @@
 #include <windows.h>
 #include <iostream>
-#include <stdio.h>
-#include <algorithm>
 #include <string>
-#include <sstream>
-#include <iomanip>
-#include "serial.h"
 #include "bytemanip.h"
 #include "reader.h"
 #include "encryptor.h"

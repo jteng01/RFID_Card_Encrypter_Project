@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="RFID_Card_Encrypter_Project/RFID_Card_Encrypter_Project.vcxproj" Id="37c79a40-b5ee-4495-98bb-8e268663bb84" />
+</Solution>

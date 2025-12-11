@@ -2,8 +2,6 @@
 #define BYTEMANIP_H
 
 #include <iostream>
-#include <stdio.h>
-#include <algorithm>
 #include <string>
 #include <sstream>
 #include <iomanip>
