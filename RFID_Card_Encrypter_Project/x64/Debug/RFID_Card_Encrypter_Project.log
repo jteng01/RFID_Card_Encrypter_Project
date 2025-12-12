@@ -1,8 +1,8 @@
 ﻿  main.cpp
-C:\Users\joshu\OneDrive\Documents\GitHub\RFID_Card_Encrypter_Project\serial.h(43,40): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\joshu\OneDrive\Documents\GitHub\RFID_Card_Encrypter_Project\bytemanip.h(35,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file '../main.cpp')
   
-C:\Users\joshu\OneDrive\Documents\GitHub\RFID_Card_Encrypter_Project\bytemanip.h(37,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\joshu\OneDrive\Documents\GitHub\RFID_Card_Encrypter_Project\serial.h(43,40): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
   (compiling source file '../main.cpp')
   
 C:\Users\joshu\OneDrive\Documents\GitHub\RFID_Card_Encrypter_Project\reader.h(88,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
@@ -14,4 +14,5 @@ C:\Users\joshu\OneDrive\Documents\GitHub\RFID_Card_Encrypter_Project\encryptor.h
 C:\Users\joshu\OneDrive\Documents\GitHub\RFID_Card_Encrypter_Project\encryptor.h(73,44): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file '../main.cpp')
   
+  LINK : C:\Users\joshu\OneDrive\Documents\GitHub\RFID_Card_Encrypter_Project\x64\Debug\RFID_Card_Encrypter_Project.exe not found or not built by the last incremental link; performing full link
   RFID_Card_Encrypter_Project.vcxproj -> C:\Users\joshu\OneDrive\Documents\GitHub\RFID_Card_Encrypter_Project\x64\Debug\RFID_Card_Encrypter_Project.exe
