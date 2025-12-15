@@ -25,7 +25,6 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->pushButtonWrite, &QPushButton::clicked,
             this, &MainWindow::writeCardInfo);
 
-    ui->pushButtonConnect->setCheckable(true);
     connect(ui->pushButtonConnect, &QPushButton::toggled,
             this, &MainWindow::toggleConnection);
 
@@ -140,6 +139,6 @@ void MainWindow::writeCardInfo(){
 void MainWindow::showError(const std::string &msg)
 {
     QMessageBox::critical(this, "Error", QString::fromStdString(msg));
-    ui->labelStatusMessage->setText("Error: " + QString::fromStdString(msg));
+    ui->labelStatusMessage->setText("" + QString::fromStdString(msg));
 }
 
