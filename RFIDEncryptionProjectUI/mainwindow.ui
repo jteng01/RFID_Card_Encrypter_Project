@@ -173,6 +173,9 @@
     <property name="text">
      <string>Open port</string>
     </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
