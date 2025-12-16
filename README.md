@@ -4,6 +4,13 @@ A small toolset for reading and encrypting data from RFID cards. This repository
 
 **Status:** Development / proof-of-concept
 
+**Requirements**
+- **Hardware:** ISO15693 RFID reader with serial interface
+- **Software:** 
+  - Visual Studio 2019/2022 (for native C++ build), or
+  - Qt Creator (for Qt-based UI build)
+  - Windows OS (x64)
+
 **Key components**
 - `encryptor.cpp`, `encryptor.h`: high-level encryption logic.
 - `bytemanip.cpp`, `bytemanip.h`: helper functions for byte/memory manipulation.
